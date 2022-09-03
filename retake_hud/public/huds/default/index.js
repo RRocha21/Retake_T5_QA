@@ -1708,27 +1708,26 @@ function updatePage(data) {
         function startAnimationWinner(side, name, gameside) {
 
             if (gameside == "ct") {
-                // $(".win_container>.team_BG>.icon").css("background-image", "url(/teams/" + teams.left.logo + ")");
+                $(".win_container>.team_BG>.icon").css("background-image", "url(../../files/img/Logo_Retake.png)");
                 $(".win_container>.win_BG>.true_team").html(name);
                 $(".win_container>.win_BG>.background").css("background-image", "url(../../files/img/hud_elements/winner_ct.png)");
             } else if (gameside == "t") {
-                // $(".win_container>.team_BG>.icon").css("background-image", "url(/teams/" + teams.right.logo + ")");
+                $(".win_container>.team_BG>.icon").css("background-image", "url(../../files/img/Logo_Retake.png)");
                 $(".win_container>.win_BG>.true_team").html(name);
                 $(".win_container>.win_BG>.background").css("background-image", "url(../../files/img/hud_elements/winner_ct.png)");
             }
 
-            $(".win_container>.team_BG").css("transform", "translate(0px,0px)").css("transition", "transform 0.0s ease-out 0.4s");
+            $(".win_container>.team_BG").css("transform", "translate(0px,0px)").css("transition", "transform 0.0s ease-out 0.3s");
             $(".win_container>.team_BG>.icon").css("animation", "LogoIn 1s ease-out  forwards");
-            $(".win_container>.win_BG").css("transform", "translate(0px,0px)").css("transition", "transform 0.4s ease-out 0.8s");
-            $(".win_contianer>.win_BG>.txt").css("transform", "translate(0px,0px)").css("transition", "transform 0.9s ease-out 1.2s");
+            $(".win_container>.win_BG").css("transform", "translate(0px,0px)").css("transition", "transform 0.3s ease-out 0.6s");
+            $(".win_container>.win_BG>.txt").css("transform", "translate(0px,0px)").css("transition", "transform 0.7s ease-out 0.9s");
         }
 
         function stopAnimationWinner() {
             $(".win_container>.team_BG>.icon").css("animation", "LogoOut 0.5s ease-out forwards");
-            $(".win_container>.team_BG").css("transform", "translate(0px,-270px)").css("transition", "transform 0.6s ease-out 0.9s");
-            $(".win_container>.win_BG").css("transform", "translate(0px,280px)").css("transition", "transform 0.6s ease-out 0.9s");
-            $(".win_contianer>.win_BG>.txt").css("transform", "translate(0px,280px)").css("transition", "transform 0.6s ease-out 0.9s");
-
+            $(".win_container>.team_BG").css("transform", "translate(0px,-270px)").css("transition", "transform 0.7s ease-out 0.9s");
+            $(".win_container>.win_BG").css("transform", "translate(0px,280px)").css("transition", "transform 0.7s ease-out 0.9s");
+            $(".win_container>.win_BG>.txt").css("transform", "translate(0px,280px)").css("transition", "transform 0.7s ease-out 0.9s");
         }
 
         // SHOW SPAM & FIREPOWER
