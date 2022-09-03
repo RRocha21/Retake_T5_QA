@@ -1,0 +1,8 @@
+styles/csgostyles
+styles/hud/hud_deathnotice
+styles/hud_reticle
+
+fonts
+
+csgo/resource/csgo_english.txt
+csgo/materials
